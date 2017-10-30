@@ -8,11 +8,11 @@ defmodule Learning do
 
   ## Examples
 
-      iex> Learning.hello
-      :world
+      iex> Learning.intro
+      {:ok, "This is my Elixir learning notes."}
 
   """
-  def hello do
-    :world
+  def intro do
+    {:ok, "This is my Elixir learning notes."}
   end
 end
