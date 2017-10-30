@@ -10,12 +10,12 @@ defmodule AmLearning.Mixfile do
       elixir: "~> 1.5",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      description: "My Elixir learning notes.",
+      description: description(),
+      package: package(),
       # test_coverage: [tool: ExCoveralls],
       # preferred_cli_env: [coveralls: :test, "coveralls.circle": :test],
       # compilers: compilers(Mix.env),
       # elixirc_paths: elixirc_paths(Mix.env),
-      # package: package(),
 
       # Docs
       name: "AmLearning",
@@ -44,7 +44,8 @@ defmodule AmLearning.Mixfile do
       {:ex_guard, "~> 1.3"},
       {:ex_json_schema, "~> 0.5.5"},
       {:ex_rated, "~> 1.3"},
-      {:ex_machina, "~> 2.1"}
+      {:ex_machina, "~> 2.1"},
+      {:elixir_ale, "~> 1.0"},
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
@@ -57,9 +58,9 @@ defmodule AmLearning.Mixfile do
   defp package() do
     [
       # This option is only needed when you don't want to use the OTP application name
-      name: "am_learning",
+      # name: "am_learning",
       # These are the default files included in the package
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*",],
       maintainers: ["Andares Merigold"],
       licenses: ["MIT"],
       source_url: @project_url,

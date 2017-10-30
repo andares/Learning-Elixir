@@ -1,0 +1,552 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.18.1">
+    <title>AmLearning.BasicTypes – AmLearning v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-c922dbe7ef.css" />
+    
+    <script src="dist/sidebar_items-a83d4a77fd.js"></script>
+    
+    
+    
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+
+    <div class="main">
+<button class="sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<section class="sidebar">
+
+  
+  <a href="https://github.com/andares/Learning-Elixir" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        AmLearning
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+    
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">AmLearning v0.1.0</small>
+        AmLearning.BasicTypes
+        
+          <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+        
+      </h1>
+
+      
+        <section id="moduledoc">
+          <p>Documentation for AmLearning.BasicTypes.</p>
+<h2 id="module-列表和元组的区别" class="section-heading">
+  <a href="#module-列表和元组的区别" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  列表和元组的区别
+</h2>
+
+<p>列表是链表形式存储，访问其长度及末尾元素效率较低。往其头部添加数据效率将高于往尾部添加单元。
+元组中的单元存储是连续的，因此其访问是快速的，适用于确定单元的数据。变更元组单元将会在内存中新开一整块存储区域，成本较高。</p>
+
+        </section>
+      
+
+      
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+    <div class="summary-row">
+  <div class="summary-signature">
+    <a href="#anonymous_function/1">anonymous_function(val)</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>匿名函数</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#atom/0">atom()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>原子/符号</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#boolean/0">boolean()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>布尔型</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#float/0">float()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>浮点，Elixir 中均为64位精度</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#integer/0">integer()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>整型</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list/0">list()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>列表</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#string/0">string()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>字串</p>
+</div>
+  
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#tuple/0">tuple()</a>
+  </div>
+  
+    <div class="summary-synopsis"><p>元组</p>
+</div>
+  
+</div>
+
+  </div>
+
+
+          
+
+        </section>
+      
+
+      
+
+      
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+          <div class="detail" id="anonymous_function/1">
+  
+  
+  <div class="detail-header">
+    <a href="#anonymous_function/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">anonymous_function(val)</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L144" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>匿名函数</p>
+<h2 id="anonymous_function/1-examples" class="section-heading">
+  <a href="#anonymous_function/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.anonymous_function 3
+6</code></pre>
+<h2 id="anonymous_function/1-要点" class="section-heading">
+  <a href="#anonymous_function/1-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; add = fn a, b -&gt; a + b end
+iex&gt; add.(1, 2) # 调用时要用&lt;var name&gt;.()，以和具名函数区分
+3</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="atom/0">
+  
+  
+  <div class="detail-header">
+    <a href="#atom/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">atom()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L95" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>原子/符号</p>
+<h2 id="atom/0-examples" class="section-heading">
+  <a href="#atom/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.atom
+{:hello, :true}</code></pre>
+<h2 id="atom/0-要点" class="section-heading">
+  <a href="#atom/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; {true, false} = {:true, :false} # true &amp; false 是atom别名
+{true, false}
+iex&gt; is_atom Yes # 默认未定义的首字大写为 Alias ，其也是一个atom
+true</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="boolean/0">
+  
+  
+  <div class="detail-header">
+    <a href="#boolean/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">boolean()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L72" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>布尔型</p>
+<h2 id="boolean/0-examples" class="section-heading">
+  <a href="#boolean/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.boolean
+{true, false}</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="float/0">
+  
+  
+  <div class="detail-header">
+    <a href="#float/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">float()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L55" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>浮点，Elixir 中均为64位精度</p>
+<h2 id="float/0-examples" class="section-heading">
+  <a href="#float/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.float
+{1.0, 1.2345e-10, 1.2345e+10}</code></pre>
+<h2 id="float/0-要点" class="section-heading">
+  <a href="#float/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; round(3.58) # 四舍五入
+4
+iex&gt; round(3.48) # 四舍五入
+3
+iex&gt; trunc(3.58) # 取整数部分
+3</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="integer/0">
+  
+  
+  <div class="detail-header">
+    <a href="#integer/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">integer()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L28" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>整型</p>
+<h2 id="integer/0-examples" class="section-heading">
+  <a href="#integer/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.integer
+{1, 0x11, 0b11, 0o11}</code></pre>
+<h2 id="integer/0-要点" class="section-heading">
+  <a href="#integer/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; 10 / 2 # 除法返回float
+5.0
+iex&gt; div 10, 2 # 使用函数可获取整型
+5
+iex&gt; rem 10, 3 # 取余
+1</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="list/0">
+  
+  
+  <div class="detail-header">
+    <a href="#list/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L176" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>列表</p>
+<h2 id="list/0-examples" class="section-heading">
+  <a href="#list/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.list
+{[1, 2, true, 3, 9, true], [4, 5, 6]}</code></pre>
+<h2 id="list/0-要点" class="section-heading">
+  <a href="#list/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.list() |&gt; elem(1) |&gt; length() # 使用 length 取长度
+3
+iex&gt; {a, b} = AmLearning.BasicTypes.list
+iex&gt; a ++ b # 使用 ++ 连接
+[1, 2, true, 3, 9, true, 4, 5, 6]
+iex&gt; a -- [3, true] # 使用 -- 移除
+[1, 2, 9, true]
+iex&gt; hd b # 头
+4
+iex&gt; tl b # 尾
+[5, 6]
+iex&gt; [77, 89, 46] # list 内值均为7~126的整型时会解释为 ascii 码，这是一个 字符列表 charlists
+&#39;MY.&#39;
+iex&gt; &#39;hello&#39; == &quot;hello&quot; # 字符列表与字串不等价
+false</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="string/0">
+  
+  
+  <div class="detail-header">
+    <a href="#string/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">string()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L122" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>字串</p>
+<h2 id="string/0-examples" class="section-heading">
+  <a href="#string/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.string
+{&quot;早上好, triss&quot;}</code></pre>
+<h2 id="string/0-要点" class="section-heading">
+  <a href="#string/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; &quot;hello, triss&quot; # atom 可以平滑转换为同名字串
+&quot;hello, triss&quot;
+iex&gt; is_binary &quot;你好&quot; # 字串是二进制数据
+true
+iex&gt; byte_size &quot;你好&quot; # 使用utf8存储
+6
+iex&gt; String.length &quot;你好&quot; # 使用 String 模块可取得字符长度
+2</code></pre>
+
+  </section>
+</div>
+<div class="detail" id="tuple/0">
+  
+  
+  <div class="detail-header">
+    <a href="#tuple/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">tuple()</span>
+    
+      <a href="https://github.com/andares/Learning-Elixir/blob/master/lib/basic_types.ex#L201" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+    
+    
+    
+  </div>
+  <section class="docstring">
+    <p>元组</p>
+<h2 id="tuple/0-examples" class="section-heading">
+  <a href="#tuple/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="iex elixir">iex&gt; AmLearning.BasicTypes.tuple
+{:ok, &quot;triss&quot;}</code></pre>
+<h2 id="tuple/0-要点" class="section-heading">
+  <a href="#tuple/0-要点" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  要点
+</h2>
+
+<pre><code class="iex elixir">iex&gt; elem AmLearning.BasicTypes.tuple, 1 # 取某个单元，起始位 0
+&quot;triss&quot;
+iex&gt; tuple_size AmLearning.BasicTypes.tuple # 单元个数
+2
+iex&gt; put_elem AmLearning.BasicTypes.tuple, 1, &quot;andares&quot; # 可替换
+{:ok, &quot;andares&quot;}</code></pre>
+
+  </section>
+</div>
+
+        </section>
+      
+
+      
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.18.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+        <button class="night-mode-toggle"><span class="sr-only">Switch theme</span></button>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-778c9ef903.js"></script>
+  
+  
+  
+  
+  </body>
+</html>
+
