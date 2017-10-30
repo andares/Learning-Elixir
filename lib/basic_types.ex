@@ -1,6 +1,6 @@
-defmodule BasicTypes do
+defmodule AmLearning.BasicTypes do
   @moduledoc """
-  Documentation for BasicTypes.
+  Documentation for AmLearning.BasicTypes.
 
   ## 列表和元组的区别
 
@@ -13,7 +13,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.integer
+      iex> AmLearning.BasicTypes.integer
       {1, 0x11, 0b11, 0o11}
 
   ## 要点
@@ -39,7 +39,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.float
+      iex> AmLearning.BasicTypes.float
       {1.0, 1.2345e-10, 1.2345e+10}
 
   ## 要点
@@ -65,7 +65,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.boolean
+      iex> AmLearning.BasicTypes.boolean
       {true, false}
 
   """
@@ -81,7 +81,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.atom
+      iex> AmLearning.BasicTypes.atom
       {:hello, :true}
 
   ## 要点
@@ -104,7 +104,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.string
+      iex> AmLearning.BasicTypes.string
       {"早上好, triss"}
 
   ## 要点
@@ -131,7 +131,7 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.anonymous_function 3
+      iex> AmLearning.BasicTypes.anonymous_function 3
       6
 
   ## 要点
@@ -152,14 +152,14 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.list
+      iex> AmLearning.BasicTypes.list
       {[1, 2, true, 3, 9, true], [4, 5, 6]}
 
   ## 要点
 
-      iex> BasicTypes.list() |> elem(1) |> length() # 使用 length 取长度
+      iex> AmLearning.BasicTypes.list() |> elem(1) |> length() # 使用 length 取长度
       3
-      iex> {a, b} = BasicTypes.list
+      iex> {a, b} = AmLearning.BasicTypes.list
       iex> a ++ b # 使用 ++ 连接
       [1, 2, true, 3, 9, true, 4, 5, 6]
       iex> a -- [3, true] # 使用 -- 移除
@@ -185,16 +185,16 @@ defmodule BasicTypes do
 
   ## Examples
 
-      iex> BasicTypes.tuple
+      iex> AmLearning.BasicTypes.tuple
       {:ok, "triss"}
 
   ## 要点
 
-      iex> elem BasicTypes.tuple, 1 # 取某个单元，起始位 0
+      iex> elem AmLearning.BasicTypes.tuple, 1 # 取某个单元，起始位 0
       "triss"
-      iex> tuple_size BasicTypes.tuple # 单元个数
+      iex> tuple_size AmLearning.BasicTypes.tuple # 单元个数
       2
-      iex> put_elem BasicTypes.tuple, 1, "andares" # 可替换
+      iex> put_elem AmLearning.BasicTypes.tuple, 1, "andares" # 可替换
       {:ok, "andares"}
 
   """

@@ -1,6 +1,6 @@
-defmodule Learning do
+defmodule AmLearning do
   @moduledoc """
-  Documentation for Learning.
+  Documentation for AmLearning.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Learning do
 
   ## Examples
 
-      iex> Learning.intro
+      iex> AmLearning.intro
       {:ok, "This is my Elixir learning notes."}
 
   """

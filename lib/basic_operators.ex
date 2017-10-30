@@ -1,6 +1,6 @@
-defmodule BasicOperators do
+defmodule AmLearning.BasicOperators do
   @moduledoc """
-  Documentation for BasicOperators.
+  Documentation for AmLearning.BasicOperators.
   """
 
   @doc """

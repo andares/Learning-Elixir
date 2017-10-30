@@ -1,4 +1,4 @@
-defmodule BasicTypesTest do
+defmodule AmLearning.BasicTypesTest do
   use ExUnit.Case
-  doctest BasicTypes
+  doctest AmLearning.BasicTypes
 end
